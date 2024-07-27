@@ -1,0 +1,29 @@
+package assign724;
+
+public class Beverage {
+
+    private String name;
+    private int price;
+    /**
+     * 만취자
+     */
+    private boolean isLiquor;
+
+    public Beverage(String name, int price, boolean isLiquor) {
+        this.name = name;
+        this.price = price;
+        this.isLiquor = isLiquor;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public boolean isLiquor() {
+        return isLiquor;
+    }
+}
