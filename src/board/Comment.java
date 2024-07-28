@@ -29,25 +29,9 @@ public class Comment {
     // 댓글 작성자의 정보를 보기 좋게 출력하고 싶다.
     @Override // 뭘 오버라이딩 하냐? -> Java.lang.Object 클래스. 어떻게? 모든 자바 클래스들은 암묵적으로 Object 클래스를 상속받으므로.
     public String toString() { // Object Class에서 정의된 toString 메서드를 오버라이딩 하는 것.
-        return "댓글 번호: " + commentNum +
+        return "\n댓글 번호: " + commentNum +
             "\n댓글 내용: " + commentContent +
             "\n댓글 작성자: " + commentAuthor +
             "\n댓글 작성일자: " + commentCreatedAt;
-    }
-
-    public int getCommentNum() {
-        return commentNum;
-    }
-
-    public String getCommentContent() {
-        return commentContent;
-    }
-
-    public String getCommentAuthor() {
-        return commentAuthor;
-    }
-
-    public String getCommentCreatedAt() {
-        return commentCreatedAt;
     }
 }
