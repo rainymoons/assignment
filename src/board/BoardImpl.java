@@ -5,7 +5,7 @@ import board.interfaces.BoardService;
 public class BoardImpl implements BoardService {
 
     private static final int MAX_POSTS; // 최대 게시글 개수
-    private static final String INVALID_TITLE_MESSAGE; // 제목 오류 알림
+    private static final String INVALID_TITLE_MESSAGE; // 제목 오류 알림q
     private static final String INVALID_AUTHOR_MESSAGE; // 작성자 오류 알림
     private static final String MAX_POSTS_MESSAGE; // 게시글 제한 오류 알림
     private static final String DELETED_POST_MESSAGE; // 게시글 삭제시 조회 및 수정 불가 알림.

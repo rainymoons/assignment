@@ -26,11 +26,11 @@ public class Bar {
      * 만약 beverage가 Soda 객체를 참조하고 있다면, ClassCastException이 발생
      */
     public void sellBeverage(Beverage beverage, Customer customer) {
-        if (beverage.isLiquor()) { // 구매하려는 beverage가 주류인지 확인.
-            Liquor liquor = (Liquor) beverage; // !!!!!! beverage를 Liquor 타입으로 형변환 !!!!!!!!!
+        if (beverage instanceof Liquor liquor) { // 구매하려는 beverage가 주류인지 확인.
             if (customer.isUnderAge()) { // 만약 구매자가 미성년자라면
                 System.out.println(" (Warning!!!)  " + customer.getName() + "은(는) 미성년자입니다."); // 경고!
-            } else { // 미성년자가 아니면
+            }
+            if(!customer.isUnderAge()) { // 미성년자가 아니면
                 customer.drink(liquor); // drink 메서드를 호출해서 고객이 주류를 마신다
                 if (customer.isLiquor()) {  // 만약 고객이 만취자라면
                     System.out.println(customer.getName() + "은(는) 만취자 입니다. 더 이상 주류를 판매할 수 없습니다.");

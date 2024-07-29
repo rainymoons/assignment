@@ -38,10 +38,14 @@ public class Customer {
     }
 
     public boolean isUnderAge() {
-        return age < UNDER_AGE;
+        return age < UNDER_AGE && age >0 ;
     }
 
     public boolean isLiquor() { // 만취자 판단
-        return bac >= MAX_BAC; // bac가 만취자 판단 기준인 30보다 높냐
+        if(bac >= MAX_BAC && bac >=0 ) {
+            return false;
+        }
+        return true; // bac가 만취자 판단 기준인 30보다 높냐
     }
+
 }

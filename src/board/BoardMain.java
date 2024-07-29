@@ -29,8 +29,8 @@ public class BoardMain {
         ktBoard.printByIndex(5);
 
         // 게시글 수정
-        ktBoard.edit(4,"지브리 애니메이션은", "아무래도 센과 치히로가");
-        ktBoard.printByIndex(4);
+        ktBoard.edit(5,"지브리 애니메이션은", "아무래도 센과 치히로가");
+        ktBoard.printByIndex(5);
 
         // 게시글 삭제
         ktBoard.delete(5);
