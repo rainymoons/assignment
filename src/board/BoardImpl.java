@@ -115,7 +115,7 @@ public class BoardImpl implements BoardService {
 
     // 게시글 삭제
     @Override
-    public void delete(int postNum) { // 게시글 삭제
+    public void delete(int postNum) { // 게시글 삭제, 배열을 지워버리면 게시글에 해당하는 댓글이 보이지 않게 될 듯?
         if(isValidPostNum(postNum)) {
             return;
         }
